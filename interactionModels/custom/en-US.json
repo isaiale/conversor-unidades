@@ -1,0 +1,88 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "slots": [
+            {
+              "name": "fromUnit",
+              "type": "UNIT"
+            },
+            {
+              "name": "toUnit",
+              "type": "UNIT"
+            },
+            {
+              "name": "value",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "name": "ConvertUnitsIntent",
+          "samples": [
+            "Convert {value} {fromUnit} to {toUnit}",
+            "How many {toUnit} are in {value} {fromUnit}"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "help",
+            "what can you do"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "stop",
+            "cancel"
+          ]
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+            "cancel",
+            "stop"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "centimeters"
+              }
+            },
+            {
+              "name": {
+                "value": "meters"
+              }
+            },
+            {
+              "name": {
+                "value": "kilometers"
+              }
+            },
+            {
+              "name": {
+                "value": "inches"
+              }
+            },
+            {
+              "name": {
+                "value": "feet"
+              }
+            },
+            {
+              "name": {
+                "value": "yards"
+              }
+            }
+          ],
+          "name": "UNIT"
+        }
+      ],
+      "invocationName": "unit converter"
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "slots": [
+            {
+              "name": "fromUnit",
+              "type": "UNIDAD"
+            },
+            {
+              "name": "toUnit",
+              "type": "UNIDAD"
+            },
+            {
+              "name": "value",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "name": "ConvertUnitsIntent",
+          "samples": [
+            "Convierte {value} {fromUnit} a {toUnit}",
+            "Cuántos {toUnit} hay en {value} {fromUnit}"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "ayuda",
+            "qué puedes hacer"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "detener",
+            "para"
+          ]
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+            "cancelar",
+            "detener"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "centímetros"
+              }
+            },
+            {
+              "name": {
+                "value": "metros"
+              }
+            },
+            {
+              "name": {
+                "value": "kilómetros"
+              }
+            },
+            {
+              "name": {
+                "value": "pulgadas"
+              }
+            },
+            {
+              "name": {
+                "value": "pies"
+              }
+            },
+            {
+              "name": {
+                "value": "yardas"
+              }
+            }
+          ],
+          "name": "UNIDAD"
+        }
+      ],
+      "invocationName": "conversor de unidades"
+    }
+  }
+}
